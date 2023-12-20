@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{41896789-D189-4565-B367-53C85026B790}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RecipeDBApp</RootNamespace>
+    <AssemblyName>RecipeDBApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddCostConverter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCostConverter.designer.cs">
+      <DependentUpon>AddCostConverter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddCountry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCountry.Designer.cs">
+      <DependentUpon>AddCountry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddGroup.designer.cs">
+      <DependentUpon>AddGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddProduct.designer.cs">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddRecipe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddRecipe.designer.cs">
+      <DependentUpon>AddRecipe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddSeason.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSeason.designer.cs">
+      <DependentUpon>AddSeason.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUser.designer.cs">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminTools.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminTools.Designer.cs">
+      <DependentUpon>adminTools.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CostConverterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CostConverterForm.designer.cs">
+      <DependentUpon>CostConverterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="countryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="countryForm.Designer.cs">
+      <DependentUpon>countryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DB.cs" />
+    <Compile Include="groupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="groupForm.designer.cs">
+      <DependentUpon>groupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="productForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="productForm.designer.cs">
+      <DependentUpon>productForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecipeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecipeForm.designer.cs">
+      <DependentUpon>RecipeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="register.Designer.cs">
+      <DependentUpon>register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="searchCategoryViews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchCategoryViews.Designer.cs">
+      <DependentUpon>searchCategoryViews.cs</DependentUpon>
+    </Compile>
+    <Compile Include="searchRecipe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchRecipe.Designer.cs">
+      <DependentUpon>searchRecipe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="searchViewedRecByUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchViewedRecByUser.designer.cs">
+      <DependentUpon>searchViewedRecByUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeasonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeasonForm.designer.cs">
+      <DependentUpon>SeasonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm.designer.cs">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userTools.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userTools.designer.cs">
+      <DependentUpon>userTools.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddCostConverter.resx">
+      <DependentUpon>AddCostConverter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCountry.resx">
+      <DependentUpon>AddCountry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddGroup.resx">
+      <DependentUpon>AddGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddProduct.resx">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddRecipe.resx">
+      <DependentUpon>AddRecipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSeason.resx">
+      <DependentUpon>AddSeason.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUser.resx">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminTools.resx">
+      <DependentUpon>adminTools.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CostConverterForm.resx">
+      <DependentUpon>CostConverterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="countryForm.resx">
+      <DependentUpon>countryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="groupForm.resx">
+      <DependentUpon>groupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="productForm.resx">
+      <DependentUpon>productForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RecipeForm.resx">
+      <DependentUpon>RecipeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="register.resx">
+      <DependentUpon>register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchCategoryViews.resx">
+      <DependentUpon>searchCategoryViews.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchRecipe.resx">
+      <DependentUpon>searchRecipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchViewedRecByUser.resx">
+      <DependentUpon>searchViewedRecByUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeasonForm.resx">
+      <DependentUpon>SeasonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForm.resx">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userTools.resx">
+      <DependentUpon>userTools.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
